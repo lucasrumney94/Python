@@ -34,4 +34,4 @@ print ('String Builder Time ' + str(end_time-start_time))
 ##########################
 
 
-# I think Python works differently that Java :) 
+# I think Python works differently than Java :) 
