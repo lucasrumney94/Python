@@ -36,3 +36,9 @@ for i in range(0, iterations):
 end_time = time.time()
 print ('String Builder Time ' + str(end_time-start_time))
 ##########################
+<<<<<<< HEAD
+=======
+
+
+# I think Python works differently than Java :) 
+>>>>>>> 786116a4a3360cc80164907f3b52755bad2888e2
