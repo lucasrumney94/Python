@@ -1,7 +1,13 @@
 import time
 
+
+iterations = 100
 word_list = ["Hello ", "there! ", "How ", "are ", "you ", " doing", " today?"]
-iterations = 20000
+
+with open('freebsddictionary.txt', 'r') as file_object:
+    for line in file_object:
+        word_list.append(file_object.readline())
+
 
 # additive string concatenation
 def join_words(words):
@@ -10,7 +16,6 @@ def join_words(words):
         sentence = sentence + word
     return sentence
 
-print (join_words(word_list))
 start_time = time.time()
 for i in range(0, iterations):
     join_words(word_list)
@@ -25,13 +30,9 @@ def join_words_using_string_builder_idea(words):
         sentence.append(word)
     return ''.join(sentence)
 
-print(join_words_using_string_builder_idea(word_list))
 start_time = time.time()
 for i in range(0, iterations):
     join_words_using_string_builder_idea(word_list)
 end_time = time.time()
 print ('String Builder Time ' + str(end_time-start_time))
 ##########################
-
-
-# I think Python works differently that Java :) 
