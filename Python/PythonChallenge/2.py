@@ -1,4 +1,6 @@
-my_file = open('data/twotext.txt', 'r')
+import os
+
+my_file = open(os.path.dirname(__file__)+'/data/twotext.txt', 'r')
 count_dict = dict()
 
 cipher_text = my_file.read().strip()

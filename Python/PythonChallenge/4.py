@@ -1,14 +1,17 @@
-import re
-import urllib2
 
+
+import re
+#import urllib
+from urllib.request import urlopen
 # First nothing page
 
 
 
 next_nothing = "12345"
 for i in range(0, 400):
-    response = urllib2.urlopen('http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing={}'.format(next_nothing))
-    html = response.read()
+    response = urlopen('http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing={}'.format(next_nothing))
+
+    html = str(response.read())
     number = re.search("next nothing is (\d+)", html)
     if number is not None:
         next_nothing = number.group(1)

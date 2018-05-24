@@ -1,5 +1,7 @@
+import os
+
 num_lines = 0
-my_first_file = open('data/threetext.txt', 'r')
+my_first_file = open(os.path.dirname(__file__)+'/data/threetext.txt', 'r')
 for line in my_first_file:
     num_lines += 1
 
@@ -7,7 +9,7 @@ print (num_lines)
 
 my_first_file.close()
 
-my_file = open('data/threetext.txt', 'r')
+my_file = open(os.path.dirname(__file__)+'/data/threetext.txt', 'r')
 
 capture = ''
 
