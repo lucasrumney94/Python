@@ -27,26 +27,6 @@ class Stack:
         return self.top
 
 
-
-my_linked_list = LinkedList()
-
-my_linked_list.insert_at_head(4)
-print(my_linked_list)
-my_linked_list.insert_at_head(9)
-print(my_linked_list)
-my_linked_list.insert_at_head(2)
-print(my_linked_list)
-my_linked_list.insert_after(1, 5)
-print(my_linked_list)
-my_linked_list.insert_after(0, 7)
-print(my_linked_list)
-my_linked_list.insert_after(2, 9)
-print(my_linked_list)
-my_linked_list.delete(9)
-print(my_linked_list)
-my_linked_list.delete_by_index(2)
-print(my_linked_list)
-
 print('Start Stack Testing')
 
 my_stack = Stack()
